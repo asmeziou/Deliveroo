@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { MdStar } from "react-icons/md";
+import { Audio } from "react-loader-spinner";
 import axios from "axios";
 
 const App = () => {
@@ -21,7 +22,18 @@ const App = () => {
   }, []);
 
   return isLoading ? (
-    <span>En cours de chargement... </span>
+    <span>
+      <ThreeDots
+        height="80"
+        width="80"
+        radius="9"
+        color="#4fa94d"
+        ariaLabel="three-dots-loading"
+        wrapperStyle={{ margin: "20px" }}
+        wrapperClass="custom-loader"
+        visible={true}
+      />
+    </span>
   ) : (
     <>
       <header>
