@@ -7,6 +7,7 @@ import axios from "axios";
 const App = () => {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [meals, setMeals] = useState([]);
 
   const fetchData = async () => {
     const response = await axios.get(
@@ -63,7 +64,15 @@ const App = () => {
                     <div className="meals">
                       {categorie.meals.map((meal) => {
                         return (
-                          <div className="item-menu" key={meal.id}>
+                          <div
+                            className="item-menu"
+                            key={meal.id}
+                            onClick={() => {
+                              const newMeals = [...meals];
+                              newMeals.push(meal);
+                              setMeals(newMeals);
+                            }}
+                          >
                             <div className="details-item">
                               <div>
                                 <h4>{meal.title}</h4>
