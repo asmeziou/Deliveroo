@@ -1,6 +1,6 @@
 import { MdStar } from "react-icons/md";
 import React, { useState } from "react";
-import Basket from "./basket";
+import Basket from "./Basket";
 import Total from "./Total";
 const Main = ({ categories }) => {
   const [meals, setMeals] = useState([]);
