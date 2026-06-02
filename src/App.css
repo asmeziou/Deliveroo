@@ -31,6 +31,9 @@ header {
   height: 60px;
   border-bottom: 1px solid #f2f2f2;
 }
+.bloc-header-1 img {
+  width: 150px;
+}
 .bloc-header-2 {
   padding: 40px 0;
   display: flex;
@@ -86,13 +89,26 @@ main {
   gap: 20px;
 }
 
-.card {
-  width: 350px;
-}
 .popular {
   color: #ff8000;
   font-weight: bold;
 }
 .star {
   color: #ff8000;
+}
+.card {
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  min-height: 400px;
+  height: auto;
+}
+.mealcard {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+}
+.mealprice {
+  margin-left: auto;
 }
