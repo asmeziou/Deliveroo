@@ -1,4 +1,4 @@
-import Buttonplus from "./buttonplus";
+import Buttonplus from "./Buttonplus";
 import Buttonmoins from "./Buttonmoins";
 import Total from "./Total";
 const Basket = ({ meals, setMeals }) => {
